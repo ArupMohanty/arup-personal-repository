@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1617396152437" stop="1617396257526" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Cleartrip Application Login</name>
+    <description type="text"></description>
+    <test-cases>
+        <test-case start="1617396152551" stop="1617396257522" status="pending">
+            <name>Book ticket in Cleartrip</name>
+            <title>Book ticket in Cleartrip</title>
+            <description type="text"></description>
+            <failure>
+                <message>Unimplemented steps were found</message>
+                <stack-trace>There are no stack trace</stack-trace>
+            </failure>
+            <steps>
+                <step start="1617396157012" stop="1617396164753" status="passed">
+                    <name>Given User is on cleartrip landing page</name>
+                    <title>Given User is on cleartrip landing page</title>
+                </step>
+                <step start="1617396164754" stop="1617396174893" status="passed">
+                    <name>When User selects the "Roundtrip" options</name>
+                    <title>When User selects the "Roundtrip" options</title>
+                </step>
+                <step start="1617396174895" stop="1617396189465" status="passed">
+                    <name>When User enters destinations from kolkata and To chennai</name>
+                    <title>When User enters destinations from kolkata and To chennai</title>
+                </step>
+                <step start="1617396189466" stop="1617396205958" status="passed">
+                    <name>Then User selects both Depart and return</name>
+                    <title>Then User selects both Depart and return</title>
+                </step>
+                <step start="1617396205960" stop="1617396221866" status="passed">
+                    <name>And User enters Passenger Details</name>
+                    <title>And User enters Passenger Details</title>
+                </step>
+                <step start="1617396221867" stop="1617396242017" status="passed">
+                    <name>And User decides "class"</name>
+                    <title>And User decides "class"</title>
+                </step>
+                <step start="1617396242018" stop="1617396256795" status="passed">
+                    <name>And user enters "Prefered Airlines"</name>
+                    <title>And user enters "Prefered Airlines"</title>
+                </step>
+                <step start="1617396257514" stop="1617396257518" status="canceled">
+                    <name>User click on "Search" Flight button</name>
+                    <title>User click on "Search" Flight button</title>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="story" value="Book ticket in Cleartrip"/>
+                <label name="feature" value="Cleartrip Application Login"/>
+                <label name="host" value="DESKTOP-3SH16SJ"/>
+                <label name="thread" value="35536@DESKTOP-3SH16SJ.TestNG-tests-1(13)"/>
+                <label name="framework" value="CucumberJVM"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="feature" value="Cleartrip Application Login"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

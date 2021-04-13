@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1617371239028" stop="1617371259062" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Cleartrip Application Login</name>
+    <description type="text"></description>
+    <test-cases>
+        <test-case start="1617371239141" stop="1617371259056" status="broken">
+            <name>Book ticket in Cleartrip</name>
+            <title>Book ticket in Cleartrip</title>
+            <description type="text"></description>
+            <failure>
+                <message>NullPointerException: null</message>
+                <stack-trace>java.lang.NullPointerException
+	at com.CucumberCraft.stepDefinitions.CleartripStepDef.user_selects_the_roundtrip_options(CleartripStepDef.java:22)
+	at ✽.When User selects the Roundtrip options(src/test/resources/features/Cleartrip.feature:6)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1617371243300" stop="1617371252543" status="passed">
+                    <name>Given User is on cleartrip landing page</name>
+                    <title>Given User is on cleartrip landing page</title>
+                </step>
+                <step start="1617371252543" stop="1617371258385" status="broken">
+                    <name>When User selects the Roundtrip options</name>
+                    <title>When User selects the Roundtrip options</title>
+                </step>
+                <step start="1617371258389" stop="1617371258395" status="canceled">
+                    <name>When User enters destinations from kolkata and To chennai</name>
+                    <title>When User enters destinations from kolkata and To chennai</title>
+                </step>
+                <step start="1617371258396" stop="1617371258396" status="canceled">
+                    <name>Then User selects both Depart and return</name>
+                    <title>Then User selects both Depart and return</title>
+                </step>
+                <step start="1617371258397" stop="1617371258397" status="canceled">
+                    <name>And User enters Passenger Details</name>
+                    <title>And User enters Passenger Details</title>
+                </step>
+                <step start="1617371258398" stop="1617371258398" status="canceled">
+                    <name>Then User decides class and Airlines</name>
+                    <title>Then User decides class and Airlines</title>
+                </step>
+                <step start="1617371258399" stop="1617371258399" status="canceled">
+                    <name>And User click on Search Flight button</name>
+                    <title>And User click on Search Flight button</title>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="story" value="Book ticket in Cleartrip"/>
+                <label name="feature" value="Cleartrip Application Login"/>
+                <label name="host" value="DESKTOP-3SH16SJ"/>
+                <label name="thread" value="19964@DESKTOP-3SH16SJ.TestNG-tests-1(13)"/>
+                <label name="framework" value="CucumberJVM"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="feature" value="Cleartrip Application Login"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1617369460367" stop="1617369490515" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Login</name>
+    <description type="text">As a user, I want to be able to login to the application
+when I present valid credentials</description>
+    <test-cases>
+        <test-case start="1617369460489" stop="1617369490511" status="passed">
+            <name>Login with valid username and valid password</name>
+            <title>Login with valid username and valid password</title>
+            <description type="text"></description>
+            <steps>
+                <step start="1617369464961" stop="1617369467642" status="passed">
+                    <name>Given I am in the login page of the application</name>
+                    <title>Given I am in the login page of the application</title>
+                    <attachments>
+                        <attachment title="attachment0" source="ef273f83-53e5-4b5f-8533-9eb985ee6b6e-attachment.png" type="image/png"/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start="1617369467647" stop="1617369489927" status="passed">
+                    <name>When I search using the valid origin "CCU" and the valid destination "LHR"</name>
+                    <title>When I search using the valid origin "CCU" and the valid destination "LHR"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="story" value="Login with valid username and valid password"/>
+                <label name="feature" value="Login"/>
+                <label name="host" value="DESKTOP-3SH16SJ"/>
+                <label name="thread" value="6696@DESKTOP-3SH16SJ.TestNG-tests-1(13)"/>
+                <label name="framework" value="CucumberJVM"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="feature" value="Login"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
