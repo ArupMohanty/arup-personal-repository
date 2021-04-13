@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="1" time="24.039888">
+<testcase classname="Login" name="Login with valid username and valid password" time="24.039888">
+<skipped><![CDATA[Given I am in the login page of the application.............................passed
+When I search using the valid origin mercury and the valid destination mercury.undefined
+]]></skipped>
+</testcase>
+</testsuite>

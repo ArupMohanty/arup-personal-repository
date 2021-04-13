@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="30.003192">
+<testcase classname="Login" name="Login with valid username and valid password" time="30.003192">
+<system-out><![CDATA[Given I am in the login page of the application.............................passed
+When I search using the valid origin "CCU" and the valid destination "LHR"..passed
+]]></system-out>
+</testcase>
+</testsuite>

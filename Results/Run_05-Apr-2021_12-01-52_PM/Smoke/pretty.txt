@@ -1,0 +1,25 @@
+Feature: Cleartrip Application Login
+
+  @Cleartrip1
+  Scenario Outline: Book ticket in Cleartrip              # src/test/resources/features/Cleartrip.feature:4
+    Given User is on cleartrip landing page
+    When User selects the "Roundtrip" options
+    When User enters destinations from <From> and To <To>
+    Then User selects both Depart and return
+    And User enters Passenger Details
+    And User enters class details
+    And user enters Prefered Airlines
+    And User click on Search Flight button
+
+    Examples: 
+
+  @Cleartrip1
+  Scenario Outline: Book ticket in Cleartrip                  # src/test/resources/features/Cleartrip.feature:16
+    Given User is on cleartrip landing page                   # GeneralStepDefs.user_is_on_cleartrip_landing_page()
+    When User selects the "Roundtrip" options                 # CleartripStepDef.user_selects_the_roundtrip_options(String)
+    When User enters destinations from kolkata and To chennai # CleartripStepDef.user_enters_destinations_from_and_to(String,String)
+    Then User selects both Depart and return                  # CleartripStepDef.user_selects_both_depart_and_return()
+    And User enters Passenger Details                         # CleartripStepDef.user_decides_class_and_airlines()
+    And User enters class details                             # CleartripStepDef.user_enters_class_details()
+    And user enters Prefered Airlines                         # CleartripStepDef.user_enters_prefered_airlines()
+    And User click on Search Flight button                    # CleartripStepDef.user_click_on_search_flight_button()

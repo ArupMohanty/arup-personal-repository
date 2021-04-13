@@ -1,0 +1,16 @@
+Feature: Login
+  As a user, I want to be able to login to the application
+  when I present valid credentials
+
+  @Search
+  Scenario Outline: Login with valid username and valid password                          # Sample.feature:9
+    When I search using the valid origin <Origin> and the valid destination <Destination>
+
+    Examples: 
+
+  Background:                                       # Sample.feature:5
+    Given I am in the login page of the application # GeneralStepDefs.i_am_in_login_page()
+
+  @Search
+  Scenario Outline: Login with valid username and valid password                   # Sample.feature:14
+    When I search using the valid origin mercury and the valid destination mercury

@@ -1,0 +1,144 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4149398000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CukeHooks.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Book ticket in Cleartrip",
+        "description": "",
+        "id": "cleartrip-application-login;book-ticket-in-cleartrip;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 654745500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CukeHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9240398800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on cleartrip landing page",
+            "match": {
+              "location": "GeneralStepDefs.user_is_on_cleartrip_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5828975300,
+              "error_message": "java.lang.NullPointerException\r\n\tat com.CucumberCraft.stepDefinitions.CleartripStepDef.user_selects_the_roundtrip_options(CleartripStepDef.java:22)\r\n\tat ✽.When User selects the Roundtrip options(src/test/resources/features/Cleartrip.feature:6)\r\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "User selects the Roundtrip options",
+            "match": {
+              "location": "CleartripStepDef.user_selects_the_roundtrip_options()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User enters destinations from kolkata and To chennai",
+            "match": {
+              "arguments": [
+                {
+                  "val": "kolkata",
+                  "offset": 30
+                },
+                {
+                  "val": "chennai",
+                  "offset": 45
+                }
+              ],
+              "location": "CleartripStepDef.user_enters_destinations_from_and_to(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User selects both Depart and return",
+            "match": {
+              "location": "CleartripStepDef.user_selects_both_depart_and_return(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User enters Passenger Details",
+            "match": {
+              "location": "CleartripStepDef.user_enters_passenger_details(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User decides class and Airlines",
+            "match": {
+              "location": "CleartripStepDef.user_decides_class_and_airlines(String,String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User click on Search Flight button",
+            "match": {
+              "location": "CleartripStepDef.user_click_on_search_flight_button(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Cleartrip1"
+          }
+        ]
+      }
+    ],
+    "name": "Cleartrip Application Login",
+    "description": "",
+    "id": "cleartrip-application-login",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/Cleartrip.feature"
+  }
+]

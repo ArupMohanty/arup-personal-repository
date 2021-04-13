@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="19.873518">
+<testcase classname="Cleartrip Application Login" name="Book ticket in Cleartrip" time="19.873518">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at com.CucumberCraft.stepDefinitions.CleartripStepDef.user_selects_the_roundtrip_options(CleartripStepDef.java:22)&#13;&#10;&#9;at ✽.When User selects the Roundtrip options(src/test/resources/features/Cleartrip.feature:6)&#13;&#10;"><![CDATA[Given User is on cleartrip landing page.....................................passed
+When User selects the Roundtrip options.....................................failed
+When User enters destinations from kolkata and To chennai...................skipped
+Then User selects both Depart and return....................................skipped
+And User enters Passenger Details...........................................skipped
+Then User decides class and Airlines........................................skipped
+And User click on Search Flight button......................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.CucumberCraft.stepDefinitions.CleartripStepDef.user_selects_the_roundtrip_options(CleartripStepDef.java:22)
+	at ✽.When User selects the Roundtrip options(src/test/resources/features/Cleartrip.feature:6)
+]]></failure>
+</testcase>
+</testsuite>

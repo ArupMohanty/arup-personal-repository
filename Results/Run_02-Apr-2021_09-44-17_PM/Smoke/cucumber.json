@@ -1,0 +1,175 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4448602700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CukeHooks.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Book ticket in Cleartrip",
+        "description": "",
+        "id": "cleartrip-application-login;book-ticket-in-cleartrip;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 716930900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CukeHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7735365800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on cleartrip landing page",
+            "match": {
+              "location": "GeneralStepDefs.user_is_on_cleartrip_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10138892500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User selects the \"Roundtrip\" options",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Roundtrip",
+                  "offset": 18
+                }
+              ],
+              "location": "CleartripStepDef.user_selects_the_roundtrip_options(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14568369000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters destinations from kolkata and To chennai",
+            "match": {
+              "arguments": [
+                {
+                  "val": "kolkata",
+                  "offset": 30
+                },
+                {
+                  "val": "chennai",
+                  "offset": 45
+                }
+              ],
+              "location": "CleartripStepDef.user_enters_destinations_from_and_to(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16492330400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User selects both Depart and return",
+            "match": {
+              "location": "CleartripStepDef.user_selects_both_depart_and_return()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15905341400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters Passenger Details",
+            "match": {
+              "location": "CleartripStepDef.user_decides_class_and_airlines()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20149548400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User decides \"class\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "class",
+                  "offset": 14
+                }
+              ],
+              "location": "CleartripStepDef.user_enters_passenger_details(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14775836200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enters \"Prefered Airlines\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Prefered Airlines",
+                  "offset": 13
+                }
+              ],
+              "location": "CleartripStepDef.user_enters(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "User click on \"Search\" Flight button",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Cleartrip1"
+          }
+        ]
+      }
+    ],
+    "name": "Cleartrip Application Login",
+    "description": "",
+    "id": "cleartrip-application-login",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/Cleartrip.feature"
+  }
+]

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="122.97559">
+<testcase classname="Cleartrip Application Login" name="Book ticket in Cleartrip" time="122.97559">
+<system-out><![CDATA[Given User is on cleartrip landing page.....................................passed
+When User selects the "Roundtrip" options...................................passed
+When User enters destinations from kolkata and To chennai...................passed
+Then User selects both Depart and return....................................passed
+And User enters Passenger Details...........................................passed
+And User enters class details...............................................passed
+And user enters Prefered Airlines...........................................passed
+And User click on Search Flight button......................................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,27 @@
+Feature: Cleartrip Application Login
+
+  @Cleartrip1
+  Scenario Outline: Book ticket in Cleartrip              # src/test/resources/features/Cleartrip.feature:4
+    Given User is on cleartrip landing page
+    When User selects the Roundtrip options
+    When User enters destinations from <From> and To <To>
+    Then User selects both Depart and return
+    And User enters Passenger Details
+    Then User decides class and Airlines
+    And User click on Search Flight button
+
+    Examples: 
+
+  @Cleartrip1
+  Scenario Outline: Book ticket in Cleartrip                  # src/test/resources/features/Cleartrip.feature:15
+    Given User is on cleartrip landing page                   # GeneralStepDefs.user_is_on_cleartrip_landing_page()
+    When User selects the Roundtrip options                   # CleartripStepDef.user_selects_the_roundtrip_options()
+      java.lang.NullPointerException
+      	at com.CucumberCraft.stepDefinitions.CleartripStepDef.user_selects_the_roundtrip_options(CleartripStepDef.java:22)
+      	at ✽.When User selects the Roundtrip options(src/test/resources/features/Cleartrip.feature:6)
+
+    When User enters destinations from kolkata and To chennai # CleartripStepDef.user_enters_destinations_from_and_to(String,String)
+    Then User selects both Depart and return                  # CleartripStepDef.user_selects_both_depart_and_return(String,String)
+    And User enters Passenger Details                         # CleartripStepDef.user_enters_passenger_details(String)
+    Then User decides class and Airlines                      # CleartripStepDef.user_decides_class_and_airlines(String,String,String)
+    And User click on Search Flight button                    # CleartripStepDef.user_click_on_search_flight_button(String)

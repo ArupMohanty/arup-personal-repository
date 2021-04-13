@@ -1,0 +1,49 @@
+Feature: Cleartrip Application Login
+
+  @Cleartrip1
+  Scenario Outline: Book ticket in Cleartrip              # src/test/resources/features/Cleartrip.feature:4
+    Given User is on cleartrip landing page
+    When User selects the "Roundtrip" options
+    When User enters destinations from <From> and To <To>
+    Then User selects both Depart and return
+    And User enters Passenger Details
+    Then User decides class and Airlines
+    And User click on Search Flight button
+
+    Examples: 
+
+  @Cleartrip1
+  Scenario Outline: Book ticket in Cleartrip                  # src/test/resources/features/Cleartrip.feature:15
+    Given User is on cleartrip landing page                   # GeneralStepDefs.user_is_on_cleartrip_landing_page()
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"form[id='SearchForm'] h1"}
+        (Session info: chrome=89.0.4389.114)
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+      System info: host: 'DESKTOP-3SH16SJ', ip: '192.168.1.249', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\arupk\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+      Session ID: 873553b082475f6a631c7bf66e77cf8b
+      *** Element info: {Using=css selector, value=form[id='SearchForm'] h1}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:464)
+      	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+      	at com.CucumberCraft.stepDefinitions.GeneralStepDefs.user_is_on_cleartrip_landing_page(GeneralStepDefs.java:40)
+      	at ✽.Given User is on cleartrip landing page(src/test/resources/features/Cleartrip.feature:5)
+
+    When User selects the "Roundtrip" options                 # CleartripStepDef.user_selects_the_roundtrip_options(String)
+    When User enters destinations from kolkata and To chennai # CleartripStepDef.user_enters_destinations_from_and_to(String,String)
+    Then User selects both Depart and return                  # CleartripStepDef.user_selects_both_depart_and_return(String,String)
+    And User enters Passenger Details                         # CleartripStepDef.user_enters_passenger_details(String)
+    Then User decides class and Airlines                      # CleartripStepDef.user_decides_class_and_airlines(String,String,String)
+    And User click on Search Flight button                    # CleartripStepDef.user_click_on_search_flight_button(String)
